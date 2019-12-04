@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cq.aaa.dbdemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name="com.cq.aaa.MyApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.A_Add_User">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.A_Get_Msg" />
+        <activity android:name=".activity.A_Send_Msg" />
+<!--//        <activity android:name=".activity.A_Add_User" />-->
+    </application>
+
+</manifest>

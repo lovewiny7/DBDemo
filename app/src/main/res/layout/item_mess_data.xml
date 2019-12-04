@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.cq.aaa.dbdemo.bean.HistoryMess" />
+
+        <!--<variable-->
+            <!--name="viewModelMew"-->
+            <!--type="com.cq.aaa.dbdemo.bean.HistoryMess" />-->
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:onClick="@{click}"
+            android:visibility="@{viewModel.type == 1 ? View.VISIBLE : View.INVISIBLE}" />
+
+        <com.global.winy7.view.TriangleView
+            android:id="@+id/triangle_left"
+            android:layout_width="4dp"
+            android:layout_height="2dp"
+            app:sjv_color="@color/white"
+            app:sjv_direction="left"
+            app:sjv_resolutionHeight="@dimen/dp_4"
+            app:sjv_resolutionWidth="3dp"
+            android:visibility="@{viewModel.type == 1 ? View.VISIBLE : View.INVISIBLE}"
+            />
+
+        <com.global.winy7.view.CustomTextView.RTextView
+            android:id="@+id/tv_mess"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="@{click}"
+            android:text="@{viewModel.content}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"
+
+            />
+
+        <com.global.winy7.view.TriangleView
+            android:id="@+id/triangle_right"
+            android:layout_width="4dp"
+            android:layout_height="2dp"
+            app:sjv_color="@color/green1"
+            app:sjv_direction="right"
+            app:sjv_resolutionHeight="@dimen/dp_4"
+            app:sjv_resolutionWidth="3dp"
+            android:visibility="@{viewModel.type == 0 ? View.VISIBLE : View.INVISIBLE}"
+            />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:onClick="@{click}"
+            android:visibility="@{viewModel.type == 0 ? View.VISIBLE : View.INVISIBLE}"
+            />
+    </LinearLayout>
+
+</layout>

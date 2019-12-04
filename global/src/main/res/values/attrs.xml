@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--自定义属性 -->
+    <declare-styleable name="ClipViewLayout">
+        <attr name="clipType" format="enum">
+            <enum name="circle" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="mHorizontalPadding" format="dimension" />
+        <attr name="clipBorderWidth" format="dimension" />
+    </declare-styleable>
+
+    <!--柱状图属性-->
+    <declare-styleable name="ArrowTextView">
+               
+        <attr name="radius" format="dimension" />
+               
+        <attr name="arrowWidth" format="dimension" />
+               
+        <attr name="arrowHeight" format="dimension" />
+               
+        <attr name="bg" format="color" />
+           
+    </declare-styleable>
+
+
+    <!-- RTextView -->
+    <declare-styleable name="RTextView">
+
+        <!--四周圆角度、左上、右上、左下、右下-->
+        <attr name="corner_radius" format="dimension" />
+        <attr name="corner_radius_top_left" format="dimension" />
+        <attr name="corner_radius_top_right" format="dimension" />
+        <attr name="corner_radius_bottom_left" format="dimension" />
+        <attr name="corner_radius_bottom_right" format="dimension" />
+
+        <!--虚线边框宽度/间隔-->
+        <attr name="border_dash_width" format="dimension" />
+        <attr name="border_dash_gap" format="dimension" />
+
+        <!--边框宽度-->
+        <attr name="border_width_normal" format="dimension" />
+        <attr name="border_width_pressed" format="dimension" />
+        <attr name="border_width_unable" format="dimension" />
+
+        <!--边框颜色-->
+        <attr name="border_color_normal" format="color" />
+        <attr name="border_color_pressed" format="color" />
+        <attr name="border_color_unable" format="color" />
+
+        <!--背景颜色-->
+        <attr name="background_normal" format="color" />
+        <attr name="background_pressed" format="color" />
+        <attr name="background_unable" format="color" />
+
+        <!--文本颜色-->
+        <attr name="text_color_normal" format="color" />
+        <attr name="text_color_pressed" format="color" />
+        <attr name="text_color_unable" format="color" />
+
+        <!--图标资源-->
+        <attr name="icon_src_normal" format="reference" />
+        <attr name="icon_src_pressed" format="reference" />
+        <attr name="icon_src_unable" format="reference" />
+
+        <!--图标、大小、位置-->
+        <attr name="icon_height" format="dimension" />
+        <attr name="icon_width" format="dimension" />
+        <attr name="icon_direction">
+            <enum name="left" value="1" />
+            <enum name="top" value="2" />
+            <enum name="right" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+
+        <!--字体样式-->
+        <attr name="text_typeface" format="string" />
+
+    </declare-styleable>
+
+    <!--权限模块自定义属性-->
+    <attr name="PermissionBackround" format="reference" />
+    <attr name="PermissionTitleColor" format="color" />
+    <attr name="PermissionMsgColor" format="color" />
+    <attr name="PermissionItemTextColor" format="color" />
+    <attr name="PermissionButtonTextColor" format="color" />
+    <attr name="PermissionButtonBackground" format="reference" />
+    <attr name="PermissionBgFilterColor" format="color" />
+    <attr name="PermissionIconFilterColor" format="color" />
+
+    <!--圆形进度条自定义属性-->
+    <declare-styleable name="CircularProgressView">
+        <attr name="cpv_progress" format="float" />
+        <attr name="cpv_maxProgress" format="float" />
+        <attr name="cpv_animDuration" format="integer" />
+        <attr name="cpv_animSwoopDuration" format="integer" />
+        <attr name="cpv_animSyncDuration" format="integer" />
+        <attr name="cpv_color" format="color"/>
+        <attr name="cpv_thickness" format="dimension"/>
+        <attr name="cpv_indeterminate" format="boolean" />
+        <attr name="cpv_animAutostart" format="boolean" />
+        <attr name="cpv_animSteps" format="integer" />
+        <attr name="cpv_startAngle" format="float" />
+    </declare-styleable>
+
+    // popWindow小三角样式
+    <declare-styleable name="TriangleView">
+        <attr name="sjv_resolutionWidth" format="dimension" />
+        <attr name="sjv_resolutionHeight" format="dimension" />
+        <attr name="sjv_color" format="color" />
+        <attr name="sjv_direction">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="right" value="2" />
+            <enum name="left" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

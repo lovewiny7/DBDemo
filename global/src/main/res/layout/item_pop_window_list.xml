@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="java.lang.String"/>
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="wrap_content"
+                  android:layout_height="60dp"
+                  android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@{viewModel}"
+            android:textSize="@dimen/sp_16"/>
+        <!--此分割线不生效所以在代码 中设置了mRecyclerView.addItemDecoration(new RecycleViewDivider(mContext, LinearLayoutManager.VERTICAL));-->
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@color/red"-->
+        <!--android:layout_height="2dp"/>-->
+    </LinearLayout>
+
+</layout>

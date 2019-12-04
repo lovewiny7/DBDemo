@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="main_color">#009CFF</color>-->
+    <color name="main_color">#FFB717</color>
+    <color name="yellow_border">#FEB616</color>
+
+
+    <color name="lucency_black">#40515151</color>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <!-- 个人中心-->
+    <color name="color_main_bg_white">#ffffff</color>
+    <!--主文字黑色-->
+    <color name="color_main_text_light_black">#666666</color>
+    <color name="red">#fd5f5d</color>
+    <!--橘色（Parking的颜色及按钮等的颜色）-->
+    <color name="color_about_us_tv_parking">#EF8627</color>
+
+    <!--文字淡黑色-->
+    <color name="color_main_text_light_gray">#999999</color>
+    <color name="lightGray">#cccccc</color>
+    <!--个人中心-圆心头像使用颜色-->
+    <color name="colorPhoto">#4F5457</color>
+
+    <!--搜索框分割线-->
+    <color name="color_divide_line_black_ad">#e1e1e1</color>
+    <!--未读消息小图标背景色-->
+    <color name="msg_red">#F4212F</color>
+
+
+    ///////////////////////悠管家/////////////////////////
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#F2963A</color>
+    <color name="windowBackground">#F4F4F4</color>
+
+
+    <!--文字颜色: 黑色-->
+    <color name="text_black">#666666</color>
+    <!--文字颜色: 灰色-->
+    <color name="text_gray">#999999</color>
+    <!--文字颜色: 浅灰色-->
+    <color name="text_light_gray">#C4C4C4</color>
+    <!--文字颜色: 橙色-->
+    <color name="text_orange">#F2963A</color>
+    <!--文字颜色: 绿色-->
+    <color name="text_green">#21C57E</color>
+    <!--分割线颜色-->
+    <color name="dividerLine">#E5E5E5</color>
+    <!--半透明-->
+    <color name="half_transparent">#80000000</color>
+
+    <color name="translucent_background">#66000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#4c4c4c</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange">#f2963a</color>
+    <color name="orange_fill">#F9D484</color>
+
+    <color name="orange_opacity30">#1ef2963a</color>
+    <color name="grey_1">#343536</color>
+    <color name="grey_2">#666666</color>
+    <color name="grey_3">#9b9b9b</color>
+    <color name="grey_title">#ededed</color>  <!--微信标题栏颜色-->
+    <color name="grey_apple">#f4f4f4</color>
+    <color name="green">#1afa29</color>
+    <color name="green1">#62c102</color>
+    <color name="orange_yellow">#ffb300</color>
+
+    <color name="pass_view_rect_input">#3DA3FF</color>
+    <color name="regi_line_color">#c8c8c8</color>
+
+    <color name="color_common_black">#000000</color>
+    <color name="color_common_gray">#d9d9d9</color>
+
+    <!--柱状图颜色-->
+    <color name="bar">#6CB0DF</color>
+       
+    <color name="bar1">#B5C2CA</color>
+       
+    <color name="bar2">#F5E6BF</color>
+       
+    <color name="bar3">#81D8C8</color>
+
+       
+    <color name="description">#686868</color>
+
+       
+    <color name="line">#8CD276</color>
+       
+    <color name="linefill">#DEEFE4</color>
+       
+    <color name="line1">#E9C517</color>
+       
+    <color name="line1fill">#ECEAD0</color>
+       
+    <color name="line2">#9F8FBA</color>
+       
+    <color name="line2fill">#EBE4F8</color>
+
+
+
+    <!--hipremission 颜色-->
+    <color name="permissionColorGreen">#41c236</color>
+    <color name="permissionColorWhite">#ffffff</color>
+    <color name="permissionBgColorGreenLight">#44A49C</color>
+    <color name="permissionBgColorBlue">#ee447AA4</color>
+
+    <!--时间选择器颜色设置-->
+    <color name="date_picker_bg">#FFFFFF</color>
+    <color name="date_picker_divider">#11112233</color>
+    <color name="date_picker_text_light">#59B29C</color>
+    <color name="date_picker_text_dark">#333333</color>
+
+    <color name="main_bg">#F0F0F0</color>
+    <color name="select_title_text">#B0B0B0</color>
+    <color name="current_time_bg">#FFFFFF</color>
+    <color name="current_time_text">#666666</color>
+    <color name="selected_time_text">#57C5E8</color>
+
+    <!--圆形进度条颜色设置-->
+    <color name="cpv_default_color">#2196F3</color>
+    <dimen name="cpv_default_thickness">4dp</dimen>
+    <integer name="cpv_default_progress">0</integer>
+    <integer name="cpv_default_max_progress">100</integer>
+    <bool name="cpv_default_is_indeterminate">false</bool>
+    <bool name="cpv_default_anim_autostart">false</bool>
+    <integer name="cpv_default_anim_duration">4000</integer>
+    <integer name="cpv_default_anim_swoop_duration">5000</integer>
+    <integer name="cpv_default_anim_sync_duration">500</integer>
+    <integer name="cpv_default_anim_steps">3</integer>
+    <integer name="cpv_default_start_angle">-90</integer>
+</resources>

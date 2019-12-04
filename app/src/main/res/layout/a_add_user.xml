@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="java.lang.String" />
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_title"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_20">
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_et_bg_white"
+            android:gravity="center_vertical"
+            android:hint="请输入账号(改号码将作为登录账号，且不可修改)"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingStart="@dimen/dp_5"
+            android:textSize="@dimen/sp_14" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@drawable/shape_et_bg_white"
+            android:gravity="center_vertical"
+            android:hint="请输入用户名"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingStart="@dimen/dp_5"
+            android:textSize="@dimen/sp_14" />
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@drawable/shape_et_bg_white"
+            android:gravity="center_vertical"
+            android:hint="年龄（选填）"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingStart="@dimen/dp_5"
+            android:textSize="@dimen/sp_14" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@drawable/shape_et_bg_white">
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/dp_5"
+                android:paddingStart="@dimen/dp_5"
+                android:text="性别"
+                android:textColor="@color/grey_3"
+                android:textSize="14sp"
+
+                tools:ignore="RtlSymmetry" />
+
+            <com.global.winy7.view.CustomTextView.RTextView
+                android:id="@+id/tv_sex_man"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_toEndOf="@+id/tv_sex"
+                android:drawablePadding="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="男"
+                android:onClick="@{click}"
+                android:textColor="@color/grey_3"
+                android:textSize="@dimen/sp_14"
+                app:icon_direction="right"
+                app:icon_height="@dimen/dp_20"
+                app:icon_src_normal="@mipmap/ic_unchecked_box"
+                app:icon_width="@dimen/dp_20" />
+
+            <com.global.winy7.view.CustomTextView.RTextView
+                android:id="@+id/tv_sex_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_toEndOf="@+id/tv_sex_man"
+                android:drawablePadding="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="女"
+                android:onClick="@{click}"
+                android:textColor="@color/grey_3"
+                android:textSize="@dimen/sp_14"
+                app:icon_direction="right"
+                app:icon_height="@dimen/dp_20"
+                app:icon_src_normal="@mipmap/ic_unchecked_box"
+                app:icon_width="@dimen/dp_20"
+
+                />
+
+            <com.global.winy7.view.CustomTextView.RTextView
+                android:id="@+id/tv_sex_unknown"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_toEndOf="@+id/tv_sex_woman"
+                android:drawablePadding="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="保密"
+                android:onClick="@{click}"
+                android:textColor="@color/grey_3"
+                android:textSize="@dimen/sp_14"
+                app:icon_direction="right"
+                app:icon_height="@dimen/dp_20"
+                app:icon_src_normal="@mipmap/ic_unchecked_box"
+                app:icon_width="@dimen/dp_20"
+
+                />
+        </RelativeLayout>
+
+        <com.global.winy7.view.CustomTextView.RTextView
+            android:id="@+id/tv_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_40"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:onClick="@{click}"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            app:corner_radius="@dimen/dp_5"
+
+            />
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.global.winy7.view.CustomTextView.RTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab_item_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:typeface="sans"
+    app:icon_direction="top"
+    app:icon_height="25dp"
+    app:icon_width="25dp"
+    android:textSize="16sp"
+    android:drawablePadding="2dp"
+    />
